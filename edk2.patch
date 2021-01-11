@@ -1,3 +1,16 @@
+diff --git a/MdeModulePkg/MdeModulePkg.dec b/MdeModulePkg/MdeModulePkg.dec
+index 9b52b34494..e75c1d4eb5 100644
+--- a/MdeModulePkg/MdeModulePkg.dec
++++ b/MdeModulePkg/MdeModulePkg.dec
+@@ -1909,7 +1909,7 @@
+   #  The OEM assigns each dissimilar table a new OEM Table ID.
+   #  This PCD is ignored for definition block.
+   # @Prompt Default OEM Table ID for ACPI table creation.
+-  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemTableId|0x20202020324B4445|UINT64|0x30001035
++  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemTableId|0x20202020324B4544|UINT64|0x30001035
+ 
+   ## Default OEM Revision for ACPI table creation.
+   #  According to ACPI specification, for LoadTable() opcode, the OS can also
 diff --git a/OvmfPkg/AcpiTables/Dsdt.asl b/OvmfPkg/AcpiTables/Dsdt.asl
 index 7550fb46b6..bbe7355609 100644
 --- a/OvmfPkg/AcpiTables/Dsdt.asl
